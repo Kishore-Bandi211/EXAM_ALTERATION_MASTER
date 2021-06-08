@@ -16,13 +16,14 @@ function App() {
   },[]);
 
   return (
+    <span>
    <div>
-        <Link to="/fhome"><Button variant="primary" className="ff" id="Home">Home</Button></Link>
+        <Button variant="primary" className="ff" id="Home" to="fhome">Home</Button>
         <br></br><br></br>
         <h1>Allotment Details</h1>
         <br></br>
         <div classname="exam" id="ExamSchedules">
-  <Table striped bordered hover variant="dark">
+  <Table striped bordered hover variant="dark" id="table">
   <thead>
     <tr>
       <th>Serial Number</th>
@@ -46,6 +47,7 @@ function App() {
   </tbody>
 </Table><br></br><br></br>
 </div></div>
+</span>
   );
 }
 

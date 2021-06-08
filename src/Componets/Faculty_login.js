@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState,useEffect } from 'react';
 import {db} from '../firebase';
 import firebase from '../firebase';
-import UserProfile from "./UserProfile";
+// import UserProfile from "./UserProfile";
 
 function App() {
   const [email,setEmail]=useState([]);//database

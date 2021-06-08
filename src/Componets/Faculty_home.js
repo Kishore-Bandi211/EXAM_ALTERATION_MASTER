@@ -2,7 +2,7 @@ import React from "react";
 import './Faculty_home.css';
 import { Nav, Navbar,Button} from "react-bootstrap";
 import Calendar from 'react-calendar';
-import UserProfile from './UserProfile';
+// import UserProfile from './UserProfile';
 const ahome=()=>{
     return(
       <span>
@@ -27,7 +27,7 @@ const ahome=()=>{
   <div className="image">
         <p ><b> “The life so short, the craft so long to learn.”
                                         ― Hippocrates
-                                        {UserProfile.getName()}</b>
+                                </b>
        
         </p>
         </div>

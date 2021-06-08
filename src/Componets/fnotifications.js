@@ -59,13 +59,13 @@ function App() {
                 
             <Accordion defaultActiveKey="1">
             <Card>
-                <Accordion.Toggle id= "show" as={Card.Header} eventKey="0">
+                <Accordion.Toggle as={Card.Header} eventKey="0">
                     Notification  {index+1}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                 <Card.Body>{row}
                 <br></br><br></br>
-                <Button variant="danger" id="delete" onClick={()=>add_details(row)}>Delete</Button>
+                <Button variant="danger" onClick={()=>add_details(row)}>Delete</Button>
                 </Card.Body>
                 </Accordion.Collapse>
             </Card>

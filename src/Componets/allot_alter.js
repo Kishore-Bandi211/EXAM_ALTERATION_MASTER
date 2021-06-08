@@ -26,23 +26,20 @@ function App() {
       // db.collections("Allotments").where("FacultyID","==",request.Faculty_id).onSnapshot(snapshot =>{
       //   alert(snapshot);
       // })
-    var count = 0
+    
      db.collection('Allotments').onSnapshot(snapshot =>{
        snapshot.docs.map(function(doc) { 
          //alert(doc.AllotmentD)
-         
          if(doc.data().AllotmentD==request.date_s & doc.data().FacultyID ==request.Faculty_id){
-          count =1
-       
+           //alert(request.Faculty_id2)
+           //alert(doc.id)
            db.collection("Allotments").doc(doc.id).update({
             FacultyID:request.Faculty_id2,
         })
         .then(function () {
         console.log("Document successfully updated!");
         }).catch(function (error) {
-
             console.error("Error removing document: ", error);
-
 
       });
           //  doc.update({
@@ -64,25 +61,16 @@ function App() {
       })
       .then(function () {
       console.log("Document successfully updated!");
-
       }).catch(function (error) {
-
           console.error("Error removing document: ", error);
 
     });
            alert("done")
-         }
-         
-         
+         } 
+
          
        })
    })
-
-   if(count == 0){
-           alert("Cannot swap")
-
-         }
-
 }
 catch{
   console.log("Error!!")

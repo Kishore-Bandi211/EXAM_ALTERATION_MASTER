@@ -13,7 +13,7 @@ const ahome=()=>{
 <Navbar.Collapse id="responsive-navbar-nav">
   <Nav className="mr-auto">
     <Nav.Link href="/allot" id="allot">Exam slot allocation</Nav.Link>
-    <Nav.Link href="/alalter" id="alalter">Allotment alteration</Nav.Link>
+    <Nav.Link href="/alalter" id="alalter" >Allotment alteration</Nav.Link>
     <Nav.Link href="/aldetails" id="allotdetails">Allotment details</Nav.Link>
     <Nav.Link href="/newreg" id="newfaculty">New faculty registeration</Nav.Link>
     <Nav.Link href="/anotify">Notifications</Nav.Link>
