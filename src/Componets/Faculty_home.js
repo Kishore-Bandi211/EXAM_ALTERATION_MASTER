@@ -12,7 +12,7 @@ const ahome=()=>{
 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 <Navbar.Collapse id="responsive-navbar-nav">
   <Nav className="mr-auto">
-    <Nav.Link href="/AllocationTime">View allocated time</Nav.Link>
+    <Nav.Link href="/AllocationTime" id="allot_details">View allocated time</Nav.Link>
     <Nav.Link href="/swap" id="swap">Swap Request</Nav.Link>
     <Nav.Link href="/viewact">View activity</Nav.Link>
     <Nav.Link href="/fnotify" id="fnotify">Notifications</Nav.Link>
