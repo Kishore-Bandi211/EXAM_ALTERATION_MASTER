@@ -12,7 +12,7 @@ import allot from "./Componets/exam_slot_assigning";
 import alalter from "./Componets/allot_alter";
 import aldetails from "./Componets/allot_details";
 import ForgetPassword from "./Componets/Forgot_password";
-// import passwordChange from './Componets/password_change';
+ import passwordChange from './Componets/password_change';
 import Feedback from "./Componets/feedback";
 import neww from "./Componets/new_faculty";
 import view from "./Componets/view_activity";
@@ -36,7 +36,7 @@ class App extends Component {
              <Route path="/allot" component={allot} exact/>
              <Route path="/alalter" component={alalter} exact/>
              <Route path="/aldetails" component={aldetails} exact/>
-             {/* <Route path="/Passchange" component={passwordChange} exact/> */}
+              <Route path="/Passchange" component={passwordChange} exact/> 
              <Route path="/forget" component={ForgetPassword} exact/>
              <Route path="/feedback" component={Feedback}></Route>
              <Route path="/newreg" component={neww}></Route>
