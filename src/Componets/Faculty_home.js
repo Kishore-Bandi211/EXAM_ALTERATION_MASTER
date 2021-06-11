@@ -14,7 +14,7 @@ const ahome=()=>{
   <Nav className="mr-auto">
     <Nav.Link href="/AllocationTime" id="allot_details">View allocated time</Nav.Link>
     <Nav.Link href="/swap" id="swap">Swap Request</Nav.Link>
-    <Nav.Link href="/viewact">View activity</Nav.Link>
+    <Nav.Link href="/viewact" id="activity">View Exam Schedule</Nav.Link>
     <Nav.Link href="/fnotify" id="fnotify">Notifications</Nav.Link>
     <Nav.Link href="/Passchange" id="passchange">Password change</Nav.Link>
     <Nav.Link href="/feedback">Feedback</Nav.Link>
