@@ -84,7 +84,6 @@ catch{
             <Form.Label>Allotment classroom</Form.Label>
             <Form.Control type="text" placeholder="classroom" id="class_s" />
           </Form.Group>
-          <Card.Title>Give the other faculty details</Card.Title>
           <Button variant="primary" type="submit" value="Submit" id="Allot">Delete</Button>
           </Form>
           </Card.Body>

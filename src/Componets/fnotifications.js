@@ -59,7 +59,7 @@ function App() {
                 
             <Accordion defaultActiveKey="1">
             <Card>
-                <Accordion.Toggle as={Card.Header} eventKey="0">
+                <Accordion.Toggle id= "show" as={Card.Header} eventKey="0">
                     Notification  {index+1}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">

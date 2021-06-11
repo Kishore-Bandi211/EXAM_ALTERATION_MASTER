@@ -78,11 +78,11 @@ function App() {
                 
             <Accordion defaultActiveKey="1">
             <Card>
-                <Accordion.Toggle as={Card.Header} eventKey="0">
+                <Accordion.Toggle  id="show" as={Card.Header} eventKey="0">
                     Alteration request {index+1}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                 </Accordion.Toggle>
-                <Accordion.Collapse id="show" eventKey="0">
+                <Accordion.Collapse  eventKey="0">
                 <Card.Body>{row}
                 <br></br><br></br>
                 <Button variant="success" onClick={() => succ(row)}>Accept</Button>&nbsp;
