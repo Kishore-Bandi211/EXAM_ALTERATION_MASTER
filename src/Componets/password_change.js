@@ -46,6 +46,7 @@ export default function ForgetPassword() {
     }
     else{
       console.log("failure");
+      // alert("incorrect answer");
     }
   }
   
@@ -65,11 +66,14 @@ export default function ForgetPassword() {
         alert('Success!!. Please enter new password');
 
       }
+       
         
       
     
     else{
       console.log("failure");
+              alert('Sorry.. you entered wrong answer');
+
     }
   
   

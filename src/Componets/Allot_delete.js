@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import firebase from '../firebase';
 import './exam_slot_assigning.css';
 import { useState,useEffect } from 'react';
+
 function App() {
   const db = firebase.firestore();
   const [data,setData]=useState([]);
@@ -62,7 +63,7 @@ catch{
   
   return (
    <div className='rrt'>
-        <Link to="/ahome"><Button variant="primary" className='ff'>Home</Button></Link>
+        <Link to="/ahome"><Button href="/ahome" variant="primary" className='ff'>Home</Button></Link>
         <div className="amrita">
        <Card border="dark" style={{ width: '30rem' }}>
           <Card.Body>
