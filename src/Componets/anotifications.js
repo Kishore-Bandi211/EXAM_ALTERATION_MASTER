@@ -4,6 +4,7 @@ import firebase from '../firebase';
 import { useState,useEffect } from 'react';
 import './exam_slot_assigning.css';
 import './anotifications.css';
+import Navi from './Nav'
 function App() {
     const db = firebase.firestore();
     const arrayUnion = firebase.firestore.FieldValue.arrayUnion;
@@ -69,8 +70,8 @@ function App() {
     }
     return(
         <span>
+            <Navi />
         <div className="rrt">
-            <Button variant="primary" href="/ahome" className="ff" id="Home">Home</Button>
         <div className="uut">
         {notif.map((row,index) => {
             console.log(row)
@@ -79,7 +80,7 @@ function App() {
             <Accordion defaultActiveKey="1">
             <Card>
                 <Accordion.Toggle  id="show" as={Card.Header} eventKey="0">
-                    Alteration request {index+1}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    ALTERATION REQUEST {index+1}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                 </Accordion.Toggle>
                 <Accordion.Collapse  eventKey="0">

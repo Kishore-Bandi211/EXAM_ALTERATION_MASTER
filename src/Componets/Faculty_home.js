@@ -1,44 +1,34 @@
 import React from "react";
 import './Faculty_home.css';
-import { Nav, Navbar,Button} from "react-bootstrap";
+import { Nav, Navbar, Button } from "react-bootstrap";
 import Calendar from 'react-calendar';
-// import UserProfile from './UserProfile';
-const ahome=()=>{
-    return(
-      <span>
-        <div className="ahome">
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-<Navbar.Brand href="#home">Exam alteration helper</Navbar.Brand>
-<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-<Navbar.Collapse id="responsive-navbar-nav">
-  <Nav className="mr-auto">
-    <Nav.Link href="/AllocationTime" id="allot_details">View allocated time</Nav.Link>
-    <Nav.Link href="/swap" id="swap">Swap Request</Nav.Link>
-    <Nav.Link href="/viewact" id="activity">View Exam Schedule</Nav.Link>
-    <Nav.Link href="/fnotify" id="fnotify">Notifications</Nav.Link>
-    <Nav.Link href="/Passchange" id="passchange">Password change</Nav.Link>
-    <Nav.Link href="/feedback">Feedback</Nav.Link>
-  </Nav>
-  <Nav>
- <Button variant="dark" id="Logout" href="/">Logout</Button>
-  </Nav>
-</Navbar.Collapse>
-</Navbar>
-  <div className="image">
-        <p ><b> “The life so short, the craft so long to learn.”
-                                        ― Hippocrates
-                                </b>
-       
-        </p>
+import Navi from './Nav2.js'
+function App() {
+
+
+
+  return (
+    <span>
+      <Navi />
+    
+      <div className="ahome">
+        <div className="image ">
+          <p ><b><i> “The life so short, the craft so long to learn.”
+            ― Hippocrates</i></b>
+
+          </p>
         </div>
-        <div className="calender">
-        <Calendar activeMonth={new Date()} />
-        <br></br>
-        <br></br>
-      
-      </div>
-</div>
-</span>
-    )
+        <div className="calender bg-secondary">
+          <Calendar activeMonth={new Date()} />
+          <br></br>
+          <br></br>
+
+        </div>  </div>
+
+      {/* </div> */}
+
+    </span>
+  )
 }
-export default ahome;
+
+export default App;

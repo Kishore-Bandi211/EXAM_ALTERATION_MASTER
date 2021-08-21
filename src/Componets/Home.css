@@ -1,15 +1,104 @@
-.desc{
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
+.desc {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
-.exam{
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
+.exam {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
-p{
-    font-size: 20px;
+p {
+  font-size: 20px;
+}
+
+.App {
+  margin: 4px;
+  padding: 2px;
+  background-color: #cccccc;
+  height: 100%;
+  width: 100%;
+  font-style: italic;
+}
+Navbar.Brand {
+  font-style: italic;
+}
+#navbar {
+  font-size: medium;
+  flood-color: blanchedalmond;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-color: bisque;
+  border-style: groove;
+  border-spacing: 2px;
+  padding: 4px;
+  background-color: rgb(125, 169, 187);
+  font-style: normal;
+}
+
+#desc,
+#examschedules,
+#reviews,
+#contactus {
+  color: aliceblue;
+}
+#alogin,
+#flogin {
+  margin: 5px;
+
+  padding: 4px;
+  font-weight: 400;
+  color: white;
+  display: inline-block;
+  background-color: rgb(125, 169, 187);
+  border-radius: 5px;
+  border: 4px double #cccccc;
+
+  /* text-align: center; */
+  font-variant: small-caps;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  font-size: medium;
+  text-shadow: #eeeeee;
+}
+
+#carousel {
+  margin-top: 10px;
+}
+
+#Description {
+  background-color: #eeeeee;
+  padding-top: 5px;
+  margin-top: 15px;
+}
+
+#des {
+  background-color: rgb(173, 182, 190);
+  padding: 3px;
+  color: rgb(39, 46, 46);
+}
+
+#descp {
+  background-color: cadetblue;
+  color: white;
+}
+
+#exam {
+  padding: 10px;
+  padding-left: 20px;
+}
+#feedback {
+  margin-top: 20px;
+  background-color: rgb(105, 146, 132);
+  padding: 20px;
+}
+#contact {
+  color: #b0e0e6;
 }

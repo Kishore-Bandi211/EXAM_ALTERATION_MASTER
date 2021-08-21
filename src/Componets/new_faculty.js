@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import firebase from '../firebase';
 import { useState,useEffect } from 'react';
+import Navi from './Nav';
+import './exam_slot_assigning.css';
 
 function App() {
     const db = firebase.firestore();
@@ -64,30 +66,31 @@ function App() {
 
     }
     return(
-        <div>
-            <Link to="/ahome"><Button variant="primary" id="Home">Home</Button></Link>
-            <div className="amrita">
-       <Card border="dark" style={{ width: '30rem' }}>
-          <Card.Body>
-          <Card.Title>New faculty registeration</Card.Title>
+        <div className="rrt">
+          <Navi />
+            {/* <Button variant="primary" href="/ahome" id="Home">Home</Button> */}
+            <div className=" amrita">
+       <Card border="primary" style={{ width: '30rem' }}>
+          <Card.Body id="crd">
+          <Card.Title id="newf">NEW FACULTY REGISTRATION</Card.Title>
           <Form onSubmit={(e)=>add_details(e)}>
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Faculty ID</Form.Label>
-            <Form.Control type="text" placeholder="faculty id" id="facid"/>
+            <Form.Label>FACULTY ID</Form.Label>
+            <Form.Control required="True" autoFocus="True" type="text" placeholder="Enter faculty id" id="facid"/>
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Faculty mail</Form.Label>
-            <Form.Control type="email" placeholder="date" id="date" />
+            <Form.Label>MAIL ID</Form.Label>
+            <Form.Control required="True" type="email" placeholder="Enter mail id" id="date" />
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="data" placeholder="time" id="time" />
+            <Form.Label>PASSWORD</Form.Label>
+            <Form.Control required="True" type="password" placeholder="Enter password" id="time" />
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Security question</Form.Label>
-            <Form.Control type="text" placeholder="classroom" id="class" />
+            <Form.Label>SECURITY QUESTION</Form.Label>
+            <Form.Control required="True" type="password" placeholder="Enter answer for security question" id="class" />
           </Form.Group>
-          <Button variant="primary" type="submit" value="Submit" id="Allot">Allot</Button>
+          <Button variant="primary" type="submit" value="Submit" id="Allot">ALLOT</Button>
           </Form>
           </Card.Body>
         </Card>

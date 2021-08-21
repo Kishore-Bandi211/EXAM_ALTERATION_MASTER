@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom';
 import { useState,useEffect} from 'react';
 import firebase from '../firebase';
 import './exam_slot_assigning.css';
+import Navi from './Nav2'
 function App() {
   const db = firebase.firestore();
   const [D,setD]=useState([]);
   const [req,setReq]=useState([]);
   const [D2,setD2]=useState([]);
+  const [FacID,setID]=useState([]);
   //const [facid,setFacid]=useState('');
   const [email,setEmail]=useState([]);
   useEffect(() =>{
@@ -32,10 +34,12 @@ function App() {
           console.log(D2[j].ID);
             
           facid=D2[j].ID;
+          
             break;
         }
     }
     console.log(facid);
+    
     for(var j=0;j<req.length;j++){
       req.pop();
     }
@@ -53,14 +57,16 @@ function App() {
 
   return (
     <span>
+      <Navi />
    <div>
         <Button variant="primary" className="ff" id="Home" to="/fhome">Home</Button>
         <br></br><br></br>
-        <h1>Allotment Details</h1>
+        <h1 className="bg-secondary text-white align-content-center">ALLOTMENT DETAILS</h1>
         <br></br>
         <div classname="exam" id="ExamSchedules">
-          
+          <h1 className="bg-secondary text-white">MY FACULTY ID: {facid}</h1>
   <Table striped bordered hover variant="dark" id="table">
+    
   <thead>
     <tr>
       <th>Serial Number</th>

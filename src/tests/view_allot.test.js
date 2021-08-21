@@ -11,9 +11,16 @@ describe('View_allotments testing ', ()=> {
     it('should have table component', ()=> {
         expect(wrapper.find('.table')).toBeDefined();
     });
-    it("Unit testing", () =>{
+
+it("Unit testing", () =>{
         const span = document.createElement("span");
         ReactDOM.render(<App></App>,span)
         }
     )
+
+    // it("Unit testing", () =>{
+    //     const span = document.createElement("span");
+    //     ReactDOM.render(<App></App>,span)
+    //     }
+    // )
 });

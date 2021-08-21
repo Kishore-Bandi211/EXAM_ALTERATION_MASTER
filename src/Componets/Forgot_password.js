@@ -101,66 +101,86 @@ export default function ForgetPassword() {
     return (
       <span>
         <div className="forget">
-          <Button variant="primary" href="/flogin"className="bbut" id="Home">Home</Button>
-   <Form inline onSubmit={(e)=>submit_mail(e)}>
+          <Button variant="primary" href="/"className="but" id="Home">Home</Button>
+
+      <div id="recover">
+         <h2 id="lbl">
+    RECOVER PASSWORD
+  </h2>
+      </div>
+   <div id="frm">
+    
+   <Form   inline onSubmit={(e)=>submit_mail(e)}>
   
-  <Form.Control
-    className="mb-2 mr-2 "
+  <Form.Control 
+      className="mb-2 mr-2 "
     id="email"
     placeholder="Enter email ID"
     type="email"
+    required="True"
+    autoFocus='True'
+    
+
   />
-  <Form.Label htmlFor="inlineFormInputGroupUsername2" srOnly>
+  {/* <Form.Label htmlFor="inlineFormInputGroupUsername2"   srOnly>
     Username
-  </Form.Label>
+  </Form.Label> */}
   
-  <Button type="submit" className="mb-2 ml-2" variant="primary" type="submit" value="Submit"id="Submit">
+  <Button type="submit" className=" " variant="primary" type="submit" value="Submit"id="Submit">
     Submit
   </Button>
+  
 
 
 
   
      
 </Form>
+
 <Form inline onSubmit={(e)=>submit_security(e)} >
   <Form.Control
     className="mb-2  mr-2 "
     id="security"
     placeholder="answer for security"
     type="text"
+    required='True'
   />
   <Form.Label htmlFor="inlineFormInputGroupUsername2" srOnly>
     Username
   </Form.Label>
   
-  <Button className="mb-2 ml-2" variant="primary" type="submit" value="security" id="verify">
+  <Button className="" variant="primary" type="submit" value="security" id="verify">
     Verify
   </Button>
 
 </Form>
+</div>
 
   <hr/>
+  <div id="new">
+
+  
 <Form  onSubmit={(e)=>submit_pass(e)}
    >
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Label>New Password</Form.Label>
-    <Form.Control type="password"  id ="pass" placeholder="enter new password" />
+    <Form.Label id="ne">NEW PASSWORD</Form.Label>
+    <Form.Control type="password"  id ="pass" required='True' placeholder="enter new password" />
   </Form.Group>
 
-   <Form.Label>Confirm password</Form.Label>
+   <Form.Label id="co">CONFIRM PASSWORD</Form.Label>
   <Form.Control
     className="mb-2 mr-sm-2 "
     id="confirm"
     placeholder="Re-enter password"
     type="password"
+    required='True'
   />
 
     <Button variant="success" type="submit" value = "submit" className="mb-2 mt-3 ml-20" id="change">Change Password</Button>{' '}
 
 
   </Form>
-
+</div>
   
   
 

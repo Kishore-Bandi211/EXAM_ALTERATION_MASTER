@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useState,useEffect} from 'react';
 import firebase from '../firebase';
 import './exam_slot_assigning.css';
+import Navi from './Nav2';
 function App() {
   const db = firebase.firestore();
   const [D,setD]=useState([]);
@@ -17,10 +18,11 @@ function App() {
 
   return (
     <span>
+      <Navi />
    <div>
         <Button variant="primary" className="ff" id="Home" to="fhome">Home</Button>
         <br></br><br></br>
-        <h1>Allotment Details</h1>
+        <h1 className="bg-secondary text-white align-content-center">INVIGILATION SCHEDULE</h1>
         <br></br>
         <div classname="exam" id="ExamSchedules">
   <Table striped bordered hover variant="dark" id="table">

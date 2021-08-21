@@ -1,7 +1,7 @@
 .amrita {
-  position: relative;
-  left: 534px;
-  top: 70px;
+  position: absolute;
+  left: 370px;
+  top: 125px;
 }
 .ff {
   position: relative;
@@ -15,6 +15,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: cadetblue;
 }
 #ExamSchedules {
   position: relative;
@@ -24,4 +25,25 @@
   position: relative;
   left: 10000px;
   top: 10px;
+}
+#crd {
+  background-color: aqua;
+  border-radius: 2px;
+}
+#alt {
+  text-align: center;
+  color: black;
+  font-style: italic;
+  font-weight: 500;
+  /* background-color: rgb(139, 217, 231); */
+  margin: 10px;
+  padding: 5px;
+}
+
+#dtl {
+  color: black;
+  padding-left: 40px;
+}
+#newf {
+  padding-left: 60px;
 }

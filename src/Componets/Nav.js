@@ -1,16 +1,11 @@
 import React from "react";
-import './Admin_home.css';
-import { Nav, Navbar, Button } from "react-bootstrap";
-import Calendar from 'react-calendar';
-import Navi from './Nav.js'
-function App() {
+import './Nav.css';
+import { Nav, Navbar,Button} from "react-bootstrap";
+function App(){
 
-
-
-  return (
-    <span>
-      <Navi />
-      {/* <div className="ahome">
+return(
+      <span>
+        <div className="">
           <div className="navb">
 
          
@@ -31,25 +26,11 @@ function App() {
   </Nav>
 </Navbar.Collapse>
 </Navbar>
-    </div> */}
-      <div className="ahome">
-        <div className="image ">
-          <p ><b><i> “The life so short, the craft so long to learn.”
-            ― Hippocrates</i></b>
-
-          </p>
-        </div>
-        <div className="calender bg-secondary">
-          <Calendar activeMonth={new Date()} />
-          <br></br>
-          <br></br>
-
-        </div>  </div>
-
-      {/* </div> */}
-
-    </span>
-  )
+ </div>
+  
+</div>
+</span>
+    )
 }
 
 export default App;

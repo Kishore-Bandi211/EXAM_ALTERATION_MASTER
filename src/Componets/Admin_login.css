@@ -1,27 +1,56 @@
-.Admin{
-    
-    background-image:url('https://tse1.mm.bing.net/th?id=OIP.ODtYTrTqz2Rc311z0ncXAAHaEx&pid=Api&P=0&w=277&h=180');
-    height: 750px;
-    overflow: auto;
-    background-position: center;
+.Admin {
+  /* background-image: url("https://tse1.mm.bing.net/th?id=OIP.ODtYTrTqz2Rc311z0ncXAAHaEx&pid=Api&P=0&w=277&h=180"); */
+  background-color: cadetblue;
+  height: 750px;
+  overflow: auto;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.Guns{
-    position: relative;
-    top:130px;
-    left:525px;
+.Guns {
+  position: absolute;
+  top: 130px;
+  left: 380px;
 }
-.llink{
-    position: right;
-    padding-left: 200px;
+.llink {
+  position: right;
+  padding-left: 200px;
 }
-.ham{
-    position: relative;
-    left:1400px;
-    top:10px;
+.ham {
+  position: relative;
+  left: 10px;
+  top: 20px;
+  padding: 10px;
+  width: 80px;
+  font-weight: 500;
 }
-.bbutton{
-    position: relative;
-    left:20px;
+.bbutton {
+  position: relative;
+  left: 30px;
+  font-weight: 500;
+}
+
+.button {
+  position: relative;
+
+  font-weight: 500;
+}
+#crd {
+  background-color: gray;
+}
+#adm {
+  text-align: center;
+  color: blueviolet;
+  font-style: italic;
+  font-weight: 500;
+  background-color: bisque;
+  margin: 10px;
+  padding: 5px;
+}
+#em,
+#ps {
+  color: aliceblue;
+
+  font-variant: small-caps;
+  font-weight: 500;
 }

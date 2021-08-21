@@ -68,24 +68,24 @@ function App() {
   return (
     <span>
    <div className="Admin">
-       <Button variant="primary" href="/"className="ham" id="home">Home</Button>
+       <Button variant="dark" href="/"className="ham" id="home">HOME</Button>
        <div className="Guns">
-       <Card border="dark" style={{ width: '30rem' }}>
+       <Card border="dark" id="crd" style={{ width: '32rem' }}>
         <Card.Body>
-          <Card.Title>Admin LOGIN</Card.Title>
+          <Card.Title id="adm">ADMIN LOGIN</Card.Title>
           <Form onSubmit={(e)=>submit_login(e)}>
           <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control name="uname" type="email" placeholder="email" id="uname" className="uname"/>
+              <Form.Label id="em">email address</Form.Label>
+              <Form.Control name="uname" type="email" required="True" autoFocus="True" placeholder="email" id="uname" className="uname"/>
             </Form.Group>
             <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control name="pwd" type="password" placeholder="password" id="pwd"/>
+              <Form.Label id="ps">password</Form.Label>
+              <Form.Control name="pwd" type="password" required="True" placeholder="password" id="pwd"/>
             </Form.Group>
-            <Button className="login-provider-button" onClick={signInWithGoogle} id="google">
-                  <span> Continue with Google</span>
+            <Button variant="success" className="login-provider-button button" onClick={signInWithGoogle} id="google">
+                  <span> CONTINUE WITH GOOGLE</span>
                </Button>
-            <Button variant="primary" type="submit" value="Submit" className="bbutton" id="Submit">Login</Button>
+            <Button variant="info" type="submit" value="Submit" className="bbutton" id="Submit">LOGIN</Button>
             
             </Form>
         </Card.Body>

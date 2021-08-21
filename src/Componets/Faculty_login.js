@@ -98,28 +98,36 @@ function App() {
 
   return (
     <span>
-   <div className="Login">
-        <Button variant="primary" href="/" className="rat">Home</Button>
+   <div id="Login">
+     
+     <Button variant="success" href="/" className="rat">HOME</Button>
+        
        <div className="Guns">
-       <Card border="dark" style={{ width: '30rem' }}>
-          <Card.Body>
-          <Card.Title>Faculty LOGIN</Card.Title>
+         
+       <Card border="primary" id="log" style={{ width: '32rem'  }}>
+          <Card.Body >
+          <Card.Title id="fc">FACULTY LOGIN</Card.Title>
+
           <Form id="login-patient" onSubmit={(e)=>submit_login(e)} >
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" id="uname"/>
+            <Form.Label id="em1">EMAIL ADDRESS</Form.Label>
+            <Form.Control type="email" autoFocus="True" required="True" placeholder="Enter email" id="uname"/>
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" id="pwd" />
+            <Form.Label id="ps1">PASSWORD</Form.Label>
+            <Form.Control type="password"  required="True" placeholder="Password" id="pwd" />
+          </Form.Group>
+          <Form.Group>
+          <Button variant="primary" type="submit" value="Submit" id="Submit">LOGIN</Button>
           </Form.Group>
           <Form.Group>
           <Button className="login-provider-button" onClick={signInWithGoogle} id="google">
                   <span> Continue with Google</span>
                </Button>
+               <Card.Link href="/forget" className="llink" id="forget">Forgot password?</Card.Link>
                </Form.Group>
-          <Button variant="primary" type="submit" value="Submit" id="Submit">Submit</Button>
-          <Card.Link href="/forget" className="llink" id="forget">Forgot password</Card.Link>
+         
+          
           </Form>
           </Card.Body>
         </Card>

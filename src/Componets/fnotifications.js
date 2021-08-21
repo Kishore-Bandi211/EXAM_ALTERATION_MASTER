@@ -4,6 +4,7 @@ import firebase from '../firebase';
 import { useState,useEffect } from 'react';
 import './exam_slot_assigning.css';
 import './anotifications.css';
+import Navi from './Nav2'
 function App() {
     const db = firebase.firestore();
     const arrayUnion = firebase.firestore.FieldValue.arrayUnion;
@@ -50,8 +51,8 @@ function App() {
     movve();
     return(
         <span>
+            <Navi />
         <div className="rrt">
-            <Button variant="primary" href="/fhome" className="ff" id="Home">Home</Button>
         <div className="uut">
         {result.map((row,index) => {
             //console.log(row)

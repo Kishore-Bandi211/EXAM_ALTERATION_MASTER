@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { useState,useEffect} from 'react';
 import firebase from '../firebase';
 import './exam_slot_assigning.css';
+import Navi from './Nav'
 function App() {
   const db = firebase.firestore();
   const [D,setD]=useState([]);
@@ -64,20 +65,20 @@ else{
 
   return (
     <span>
-   <div>
-        <Button variant="primary" className="ff" id="Home" to="/ahome">Home</Button>
+      <Navi />
+   <div className="">
         <br></br><br></br>
-        <h1>Allotment Details</h1>
+        <h1 id="dtl" className="bg-secondary text-white align-content-center" >ALLOTMENT DETAILS</h1>
         <br></br>
-        <Card border="dark" style={{ width: '30rem' }}>
-          <Card.Body>
-          <Card.Title>Alloting Details based on faculty ID</Card.Title>
+        <Card border="primary" style={{ width: '30rem' }}>
+          <Card.Body id="crd">
+          <Card.Title>ALLOTMENT DETAILS BASED ON FACULTY ID</Card.Title>
           <Form onSubmit={(e)=>add_details(e)}>
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Give faculty ID</Form.Label>
-            <Form.Control type="text" placeholder="faculty id" id="facid"/>
+            <Form.Label>FACULTY ID</Form.Label>
+            <Form.Control required="True" type="text" placeholder=" Enter Faculty ID" id="facid"/>
           </Form.Group>
-          <Button variant="primary" type="submit" value="Submit" id="Allot">Show</Button>
+          <Button variant="primary" type="submit" value="Submit" id="Allot">SHOW</Button>
           </Form>
           </Card.Body>
         </Card>

@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import firebase from '../firebase';
 import { useState,useEffect } from 'react';
 import './exam_slot_assigning.css';
-
+import Admin from './Nav'
 function App() {
   const db = firebase.firestore();
   const arrayUnion = firebase.firestore.FieldValue.arrayUnion;
@@ -129,31 +129,32 @@ db.collection("FacultyDetails").doc(request.Faculty_id).update({
 //.add_details(request.time);
 }
   return (
+   
     <span>
+       <Admin />
    <div className="rrt">
-        <Button variant="primary" href="/ahome" className="ff" id="Home">Home</Button>
        <div className="amrita">
-       <Card border="dark" style={{ width: '30rem' }}>
-          <Card.Body>
-          <Card.Title>Alloting Details</Card.Title>
-          <Form onSubmit={(e)=>add_details(e)}>
+       <Card border="primary" style={{ width: '30rem' }}>
+          <Card.Body id="crd">
+          <Card.Title id="alt">ALLOTMENT DETAILS</Card.Title>
+          <Form  onSubmit={(e)=>add_details(e)}>
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Give faculty ID</Form.Label>
-            <Form.Control type="text" placeholder="faculty id" id="facid"/>
+            <Form.Label>FACULTY ID</Form.Label>
+            <Form.Control required="True" type="text" placeholder="faculty id" id="facid"/>
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Allotment date</Form.Label>
-            <Form.Control type="date" placeholder="date" id="date" />
+            <Form.Label>ALLOTMENT DATE</Form.Label>
+            <Form.Control required="True" type="date" placeholder="date" id="date" />
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Allotment time</Form.Label>
-            <Form.Control type="time" placeholder="time" id="time" />
+            <Form.Label>ALLOTMENT TIME</Form.Label>
+            <Form.Control required="True" type="time" placeholder="time" id="time" />
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Allotment classroom</Form.Label>
-            <Form.Control type="text" placeholder="classroom" id="class" />
+            <Form.Label>ALLOTMENT TIME</Form.Label>
+            <Form.Control required="True" type="text" placeholder="classroom" id="class" />
           </Form.Group>
-          <Button variant="primary" type="submit" value="Submit" id="Allot">Allot</Button>
+          <Button variant="primary" type="submit" value="Submit" id="Allot">ALLOT</Button>
           </Form>
           </Card.Body>
         </Card>

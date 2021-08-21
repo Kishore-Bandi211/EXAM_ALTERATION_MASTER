@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import firebase from '../firebase';
 import './exam_slot_assigning.css';
+import Navi from './Nav'
 import { useState,useEffect } from 'react';
 function App() {
   const db = firebase.firestore();
@@ -91,35 +92,35 @@ catch{
   
   return (
     <span>
+      <Navi />
    <div className='rrt'>
-        <Button variant="primary" className='ff' to="/ahome">Home</Button>
         <div className="amrita">
-       <Card border="dark" style={{ width: '30rem' }}>
-          <Card.Body>
-          <Card.Title>Give details of the requested faculty</Card.Title>
+       <Card border="primary" style={{ width: '30rem' }}>
+          <Card.Body id="crd">
+          <Card.Title> GIVE DETAILS OF THE REQUESTED FACULTY</Card.Title>
           <Form onSubmit={(e)=>add_details(e)}>
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Give Faculty ID</Form.Label>
-            <Form.Control type="text" placeholder="faculty id" id="facid"/>
+            <Form.Label>FACULTY ID</Form.Label>
+            <Form.Control required="True" type="text" placeholder="faculty id" id="facid"/>
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Allotment date</Form.Label>
-            <Form.Control type="date" placeholder="date" id="date_s" />
+            <Form.Label>ALLOTMENT DATE</Form.Label>
+            <Form.Control required="True" type="date" placeholder="date" id="date_s" />
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Allotment time</Form.Label>
-            <Form.Control type="time" placeholder="time" id="time_s" />
+            <Form.Label>ALLOTMENT TIME</Form.Label>
+            <Form.Control required="True" type="time" placeholder="time" id="time_s" />
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Allotment classroom</Form.Label>
-            <Form.Control type="text" placeholder="classroom" id="class_s" />
+            <Form.Label>ALLOTMENT CLASSROOM</Form.Label>
+            <Form.Control required="True" type="text" placeholder="classroom" id="class_s" />
           </Form.Group>
-          <Card.Title>Give the other faculty details</Card.Title>
+          <Card.Title>GIVE THE OTHER FACULTY DETAILS</Card.Title>
           <Form.Group controlId="formBasicEmail">
-          <Form.Label>Give Faculty ID</Form.Label>
-            <Form.Control type="text" placeholder="faculty id" id="facid2"/>
+          <Form.Label>FACULTY ID</Form.Label>
+            <Form.Control required="True" type="text" placeholder="faculty id" id="facid2"/>
           </Form.Group>
-          <Button variant="primary" type="submit" value="Submit" id="Allot">Swap</Button>
+          <Button variant="primary" type="submit" value="Submit" id="Allot">SWAP</Button>
           </Form>
           </Card.Body>
         </Card>

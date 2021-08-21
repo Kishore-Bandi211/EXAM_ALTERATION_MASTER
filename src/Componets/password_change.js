@@ -2,7 +2,7 @@ import React from 'react';
 import "./Forgot_password.css";
 import { useState,useEffect } from 'react';
 import {db} from '../firebase';
-
+import Navi from './Nav2';
 import { Form,Button} from 'react-bootstrap';
 
 export default function ForgetPassword() {
@@ -104,8 +104,16 @@ export default function ForgetPassword() {
 
     return (
       <span>
+        <Navi />
         <div className="forget">
-          <Button variant="primary" className="bbut" href="/fhome" id="Home">Home</Button>
+
+          <div id="recover">
+         <h2 id="lbl">
+    CHANGE PASSWORD
+  </h2>
+      </div>
+
+      <div id="frm">
    <Form inline onSubmit={(e)=>submit_mail(e)}>
   
   <Form.Control
@@ -113,6 +121,8 @@ export default function ForgetPassword() {
     id="email"
     placeholder="Enter email ID"
     type="email"
+    required="True"
+    autoFocus='True'
   />
   <Form.Label htmlFor="inlineFormInputGroupUsername2" srOnly>
     Username
@@ -127,12 +137,14 @@ export default function ForgetPassword() {
   
      
 </Form>
+
 <Form inline onSubmit={(e)=>submit_security(e)} >
   <Form.Control
     className="mb-2  mr-2 "
     id="security"
     placeholder="answer for security"
     type="text"
+    required="True"
   />
   <Form.Label htmlFor="inlineFormInputGroupUsername2" srOnly>
     Username
@@ -143,29 +155,31 @@ export default function ForgetPassword() {
   </Button>
 
 </Form>
-
+</div>
   <hr/>
+  <div id="new">
 <Form  onSubmit={(e)=>submit_pass(e)}
    >
   <Form.Group controlId="exampleForm.ControlInput1">
-    <Form.Label>New Password</Form.Label>
-    <Form.Control type="password"  id ="pass" placeholder="enter new password" />
+    <Form.Label>NEW PASSWORD</Form.Label>
+    <Form.Control type="password"  required="True" id ="pass" placeholder="enter new password" />
   </Form.Group>
 
-   <Form.Label>Confirm password</Form.Label>
+   <Form.Label>CONFIRM PASSWORD</Form.Label>
   <Form.Control
     className="mb-2 mr-sm-2 "
     id="confirm"
     placeholder="Re-enter password"
     type="password"
+    required="True"
   />
 
-    <Button variant="success" type="submit" value = "submit" className="mb-2 mt-3 ml-20" id="change">Change Password</Button>{' '}
+    <Button variant="success" type="submit" value = "submit" className="mb-2 mt-3 ml-20" id="change">CHANGE PASSWORD</Button>{' '}
 
 
   </Form>
 
-  
+  </div>
   
 
     </div>
